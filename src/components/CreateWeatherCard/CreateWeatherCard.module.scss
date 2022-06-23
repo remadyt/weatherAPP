@@ -1,0 +1,89 @@
+@import "src/styles/common";
+
+.container {
+  .createButton {
+    position: fixed;
+    right: 45px;
+    bottom: 34px;
+  }
+}
+
+.wrapper {
+  min-width: 300px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 38px;
+    margin-bottom: 16px;
+
+    @media (max-width: 600px) {
+      margin-bottom: 8px;
+      font-size: 30px;
+    }
+  }
+
+  .description {
+    color: $color-gray;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 67px;
+
+    @media (max-width: 600px) {
+      font-size: 14px;
+      margin-bottom: 37px;
+    }
+  }
+
+  .input {
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $color-gray;
+    padding: 10px 0;
+
+    ::placeholder {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 24px;
+      color: $color-gray-light;
+    }
+  }
+
+  .inputWithError {
+    border-bottom: 1px solid $color-red;
+  }
+
+  .errorMessage {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-red;
+    margin-top: 12px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+
+    @media (max-width: 600px) {
+      margin-top: 80px;
+    }
+
+    .cancelButton {
+      margin-right: 30px;
+    }
+  }
+}

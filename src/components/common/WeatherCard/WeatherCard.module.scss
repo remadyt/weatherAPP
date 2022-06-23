@@ -1,0 +1,79 @@
+@import "src/styles/common";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-width: 295px;
+  height: 345px;
+  box-shadow: 0 2px 10px rgba(10, 10, 10, 0.25);
+  border-radius: 6px;
+  padding: 24px;
+
+  .name {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 15px;
+  }
+
+  .location {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+
+  .params {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    .wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $color-gray-light;
+      margin-bottom: 16px;
+    }
+
+    .title {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 12px;
+    }
+
+    .line {
+      height: 1px;
+      width: 100%;
+      background-color: $color-gray-light;
+    }
+
+    .param {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .lastUpdate {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-gray;
+    text-align: right;
+    margin-bottom: 30px;
+  }
+
+  .buttonsWrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .withoutRemoveButton {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
